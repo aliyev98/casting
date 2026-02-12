@@ -1,0 +1,108 @@
+footer {
+    padding: 50px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    background: #b30000;
+
+    .footer-top {
+        display: flex;
+        gap: 100px;
+        border-bottom: 1px solid #D1D1D1;
+        padding-bottom: 24px;
+
+        .section-title {
+            color: #fff;
+        }
+
+        .footer-infos {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 80px;
+            justify-content: space-between;
+            width: 50%;
+
+            .info-div {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                .info-label {
+                    color: #fff;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 120%;
+                    text-transform: uppercase;
+                }
+
+                .info-content {
+                    color: #fff;
+                    font-size: 12px;
+                    font-style: normal;
+                    font-weight: 300;
+                    line-height: 120%;
+                }
+            }
+        }
+
+    }
+
+    .footer-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        a {
+            color: #fff;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 120%;
+        }
+
+        .social-links {
+            display: flex;
+            align-items: center;
+
+            span {
+                margin-left: 16px;
+                color: #fff;
+            }
+
+            a {
+                margin-left: 24px;
+                padding: 6px;
+                border-radius: 8px;
+            }
+        }
+    }
+
+    .footer-bottom {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .copyright {
+            color: #fff;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 120%;
+        }
+
+        .bottom-actions {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+
+            a {
+                color: #fff;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 120%;
+            }
+        }
+    }
+}

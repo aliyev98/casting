@@ -17,6 +17,8 @@
 @use './components/selects/formSelect';
 // (cards)
 @use './components/cards/heroForm';
+@use './components/cards/logoStrip';
+@use './components/cards/accordion';
 
 // pages
 @use './pages/index';

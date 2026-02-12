@@ -1,8 +1,12 @@
+@use '../abstracts/mixins' as *;
+
 .homepage-container {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
 
     .homepage-head {
         padding: 16px 24px;
-
         background: url('/assets/images/hero-img.jpg');
         background-size: cover;
         background-position: top;
@@ -38,7 +42,7 @@
                     font-style: italic;
                 }
 
-                .hero-actions{
+                .hero-actions {
                     display: flex;
                     align-items: center;
                     gap: 12px;
@@ -47,6 +51,60 @@
 
             }
 
+        }
+    }
+
+    .homepage-our-partners {
+        padding: 0 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 32px;
+
+        .section-title {
+            color: #000;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 120%;
+        }
+    }
+
+    .faq-section {
+        padding: 0 50px;
+        display: flex;
+        gap: 100px;
+
+        @include mq(tablet-portrait-up) {
+            flex-direction: column;
+            gap: 24px;
+            padding: 0;
+        }
+
+        .section-intro {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 12px;
+            width: 40%;
+
+            @include mq(tablet-portrait-up) {
+                width: 100%;
+                align-items: center;
+            }
+
+            .form-button {
+                margin-top: 12px;
+                width: fit-content;
+            }
+        }
+
+        .accordion {
+            width: 60%;
+
+            @include mq(tablet-portrait-up) {
+                width: 100%;
+            }
         }
     }
 }
