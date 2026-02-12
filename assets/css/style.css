@@ -30,6 +30,11 @@ select {
   outline: none;
   border: none;
 }
+select:focus {
+  border: none;
+  box-shadow: none;
+  border: none;
+}
 
 textarea {
   resize: none;
@@ -38,13 +43,12 @@ textarea {
 }
 
 header {
-  padding: 0 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 header .logo-div {
-  width: 106px;
   height: 36px;
   display: flex;
   align-items: center;
@@ -134,7 +138,7 @@ header .header-actions .btn-group .dropdown-toggle .circle {
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background-color: green;
+  background-color: #b30000;
 }
 
 .hover-button {
@@ -182,6 +186,9 @@ header .header-actions .btn-group .dropdown-toggle .circle {
   color: #000;
   text-decoration: none;
 }
+.hover-button-white span {
+  font-size: 14px;
+}
 .hover-button-white img {
   width: 0;
   height: 16px;
@@ -198,6 +205,18 @@ header .header-actions .btn-group .dropdown-toggle .circle {
   transform: translateX(0);
 }
 
+.form-button {
+  border-radius: 6px;
+  background: #7A1F20;
+  padding: 12px;
+}
+.form-button span {
+  color: #FFF;
+  font-size: 14px;
+  font-style: normal;
+  line-height: 140%;
+}
+
 .header-search-div {
   height: 40px;
   width: 40px;
@@ -208,7 +227,7 @@ header .header-actions .btn-group .dropdown-toggle .circle {
   cursor: pointer;
   position: relative;
   overflow: hidden;
-  transition: width 0.25s ease;
+  transition: width 0.7s ease;
   box-shadow: 0px 0px 10px -5px #000000;
   background-color: #fff;
 }
@@ -247,11 +266,121 @@ header .header-actions .btn-group .dropdown-toggle .circle {
   pointer-events: auto;
 }
 
+.custom-form-select {
+  padding: 10px 0px;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  border-bottom: 1px solid #CFCFCF;
+}
+
+.hero-form {
+  padding: 24px;
+  border-radius: 12px;
+  border: 1px solid #E7E9ED;
+  background: #FFF;
+  box-shadow: 0 4px 6px -2px rgba(51, 51, 51, 0.03);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 16px;
+  width: 50%;
+}
+.hero-form .form-header {
+  background-color: lightblue;
+}
+.hero-form .form-header .form-title {
+  color: #000;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+}
+.hero-form .form-body {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  width: 100%;
+}
+.hero-form .form-body .select-type {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.hero-form .form-body .select-type .hero-form-label {
+  color: var(--neutral-colors-black, #010203);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+.hero-form .form-body .select-type .hero-form-label span {
+  color: #EB1000;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+}
+.hero-form .form-body .select-type .selects {
+  width: 100%;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.hero-form .form-body .select-type .selects .form-select {
+  width: 100%;
+}
+.hero-form .form-footer {
+  width: 100%;
+}
+.hero-form .form-footer .form-button {
+  width: 100%;
+}
+
 .homepage-container .homepage-head {
-  padding: 16px 50px;
-  background: url("assets/images/hero-img.jpg");
+  padding: 16px 24px;
+  background: url("/assets/images/hero-img.jpg");
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
-  height: 550px;
+}
+.homepage-container .homepage-head .homepage-hero {
+  padding: 70px 0px 0px 0px;
+  display: flex;
+  gap: 100px;
+}
+.homepage-container .homepage-head .homepage-hero .hero-intro {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 50%;
+}
+.homepage-container .homepage-head .homepage-hero .hero-intro .hero-title {
+  color: #FFF;
+  font-size: 54px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: 1.08px;
+}
+.homepage-container .homepage-head .homepage-hero .hero-intro .hero-description {
+  color: #FFF;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 140%;
+  letter-spacing: 0.32px;
+  font-style: italic;
+}
+.homepage-container .homepage-head .homepage-hero .hero-intro .hero-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 16px;
 }/*# sourceMappingURL=style.css.map */

@@ -82,13 +82,228 @@
 
             </header>
 
+            <div class="homepage-hero">
+
+                <div class="hero-intro">
+                    <span class="hero-title">Gələcəyin aktyoru ol!</span>
+                    <p class="hero-description">Bizə qoşul ki, aktyorluq kariyeranda məqsədlərinə doğru birlikdə
+                        addımlayaq!</p>
+
+                    <div class="hero-actions">
+
+                        <a href="castingForm.html" class="hover-button">
+                            <span class="label">Aktyor ol</span>
+                            <img src="assets/icons/arrow-up-white.svg" alt="">
+                        </a>
+
+                        <a href="castingForm.html" class="hover-button-white">
+                            <span class="label">Daha ətraflı</span>
+                            <img src="assets/icons/arrow-up.svg" alt="">
+                        </a>
+
+                    </div>
+                </div>
+
+                <form class="hero-form">
+
+                    <div class="form-header">
+                        <span class="form-title">Aktyor tap</span>
+                    </div>
+
+                    <div class="form-body">
+
+                        <!-- cins -->
+                        <div class="select-type">
+
+                            <label for="sex" class="hero-form-label"><span>*</span>Cins</label>
+
+                            <div class="selects">
+
+                                <select class="custom-form-select" name="sex" id="sex">
+                                    <option value="all">Hamısı</option>
+                                    <option value="male">Kişi</option>
+                                    <option value="female">Qadın</option>
+                                </select>
+
+                            </div>
+
+                        </div>
+
+                        <!-- şəhər -->
+                        <div class="select-type">
+
+                            <label for="city" class="hero-form-label"><span>*</span>Şəhər</label>
+
+                            <div class="selects">
+
+                                <select class="custom-form-select" name="city" id="city">
+                                    <option value="all">Hamısı</option>
+                                    <option value="male">Naxçıvan</option>
+                                    <option value="female">Bakı</option>
+                                </select>
+
+                            </div>
+
+                        </div>
+
+                        <!-- yaş -->
+                        <div class="select-type">
+
+                            <label for="age" class="hero-form-label"><span>*</span>Yaş</label>
+
+                            <div class="selects">
+
+                                <select class="custom-form-select" name="min_age" id="amin_ge" required>
+                                    <option value="" disabled selected hidden>min</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                </select>
+
+                                <select class="custom-form-select" name="max_age" id="max_age" required>
+                                    <option value="" disabled selected hidden>max</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                </select>
+
+                            </div>
+
+                        </div>
+
+                        <!-- boy -->
+                        <div class="select-type">
+
+                            <label for="length" class="hero-form-label"><span>*</span>Boy</label>
+
+                            <div class="selects">
+
+                                <select class="custom-form-select" name="length" id="length" required>
+                                    <option value="" disabled selected hidden>min</option>
+                                    <option value="1">160</option>
+                                    <option value="2">161</option>
+                                </select>
+
+                                <select class="custom-form-select" name="age" id="age" required>
+                                    <option value="" disabled selected hidden>max</option>
+                                    <option value="1">160</option>
+                                    <option value="2">161</option>
+                                </select>
+
+                            </div>
+
+                        </div>
+
+                        <!-- saç -->
+                        <div class="select-type">
+
+                            <label for="hair" class="hero-form-label"><span>*</span>Saç rəngi</label>
+
+                            <div class="selects">
+
+                                <select class="custom-form-select" name="hair" id="hair">
+                                    <option value="all">Hamısı</option>
+                                    <option value="male">Qara</option>
+                                    <option value="female">Sarı</option>
+                                </select>
+
+                            </div>
+
+                        </div>
+
+                        <!-- göz -->
+                        <div class="select-type">
+
+                            <label for="eye" class="hero-form-label"><span>*</span>Göz rəngi</label>
+
+                            <div class="selects">
+
+                                <select class="custom-form-select" name="eye" id="eye">
+                                    <option value="all">Hamısı</option>
+                                    <option value="male">Qara</option>
+                                    <option value="female">Qəhvəyi</option>
+                                </select>
+
+                            </div>
+
+                        </div>
+
+                        <!-- dil -->
+                        <div class="select-type">
+
+                            <label for="language" class="hero-form-label"><span>*</span>Bildiyi dillər</label>
+
+                            <div class="selects">
+
+                                <select class="custom-form-select" name="language" id="language">
+                                    <option value="all">Hamısı</option>
+                                    <option value="male">Azərbaycan</option>
+                                    <option value="female">İngilis</option>
+                                </select>
+
+                            </div>
+
+                        </div>
+
+                        <!-- bacarıq -->
+                        <div class="select-type">
+
+                            <label for="skill" class="hero-form-label"><span>*</span>Bacarıqlar</label>
+
+                            <div class="selects">
+
+                                <select class="custom-form-select" name="skill" id="skill">
+                                    <option value="all">Hamısı</option>
+                                    <option value="male">At sürmək</option>
+                                    <option value="female">Eşşəyə minmək</option>
+                                </select>
+
+                            </div>
+
+                        </div>
+
+                        <!-- çəki -->
+                        <div class="select-type">
+
+                            <label for="weigh" class="hero-form-label"><span>*</span>Çəki</label>
+
+                            <div class="selects">
+
+                                <select class="custom-form-select" name="min_weigh" id="min_weigh" required>
+                                    <option value="" disabled selected hidden>min</option>
+                                    <option value="1">40</option>
+                                    <option value="2">40</option>
+                                </select>
+
+                                <select class="custom-form-select" name="max_weigh" id="max_weigh" required>
+                                    <option value="" disabled selected hidden>max</option>
+                                    <option value="1">160</option>
+                                    <option value="2">161</option>
+                                </select>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="form-footer">
+
+                        <button class="form-button">
+                            <span>Axtar</span>
+                        </button>
+
+                    </div>
+
+            </div>
+
         </div>
-        <!-- homepage head end -->
+
+    </div>
+    <!-- homepage head end -->
 
 
-        <footer>
+    <footer>
 
-        </footer>
+    </footer>
 
     </div>
 

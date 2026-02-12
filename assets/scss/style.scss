@@ -10,8 +10,13 @@
 // components
 // (buttons)
 @use './components/buttons/hoverButton';
+@use './components/buttons/formButton';
 // (inputs)
 @use './components/inputs/headerSearch';
+// (selects)
+@use './components/selects/formSelect';
+// (cards)
+@use './components/cards/heroForm';
 
 // pages
 @use './pages/index';
