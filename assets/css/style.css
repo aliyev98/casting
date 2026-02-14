@@ -861,7 +861,10 @@ footer .footer-bottom .bottom-actions a {
   flex-direction: column;
 }
 .homepage-container .prominent-actors .section-header {
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px;
 }
 .homepage-container .prominent-actors .section-body .swiper-section {
   display: flex;
@@ -881,7 +884,10 @@ footer .footer-bottom .bottom-actions a {
   flex-direction: column;
 }
 .homepage-container .most-popular-actors .section-header {
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px;
 }
 .homepage-container .most-popular-actors .section-body .swiper-section {
   display: flex;
