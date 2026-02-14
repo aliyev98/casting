@@ -93,40 +93,61 @@ header {
         .btn-group {
 
             .dropdown-toggle {
-                padding: 12px;
-                display: flex;
-                align-items: center;
-                gap: 10px;
+                --dot: 6px;
+                --gap: 6px;
+                --shift: calc(var(--dot) + var(--gap));
 
-                color: #FFF;
-                font-size: 14px;
-                font-style: normal;
+                color: #fff;
+                font-size: 18px;
                 font-weight: 500;
                 line-height: 140%;
+                position: relative;
+                display: inline-flex;
+                align-items: center;
 
-                &::after {
-                    display: none;
+
+                padding: 12px;
+                padding-left: calc(12px + var(--shift));
+
+                .circle {
+                    width: var(--dot);
+                    height: var(--dot);
+                    border-radius: 50%;
+                    background: #b30000;
+
+                    position: absolute;
+                    top: 50%;
+                    left: 12px;
+                    transform: translate(var(--shift), -50%);
+                    opacity: 0;
+
+                    transition: transform .35s ease, opacity .2s ease;
+                }
+
+                span {
+                    display: inline-block;
+                    transform: translateX(calc(var(--shift) * -1));
+                    transition: transform .35s ease;
+                }
+
+                &:hover {
+                    .circle {
+                        transform: translate(0, -50%);
+                        opacity: 1;
+                    }
+
+                    span {
+                        transform: translateX(0);
+                    }
                 }
 
                 &:focus {
                     border: none;
                 }
-
-                .circle {
-                    width: 6px;
-                    height: 6px;
-                    border-radius: 50%;
-                    background-color: #b30000;
-                }
             }
-
+            
         }
 
     }
-
-    // .header-search-div{
-    //     position: absolute;
-    //     right: 290px;
-    // }
 
 }

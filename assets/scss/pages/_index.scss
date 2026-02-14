@@ -70,8 +70,87 @@
         }
     }
 
-    .faq-section {
+    .homepage-about-us {
         padding: 0 50px;
+        display: flex;
+        gap: 16px;
+
+        .section-intro {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            width: 40%;
+        }
+
+        .section-body {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+
+            .hover-button {
+                margin-top: 16px;
+            }
+        }
+    }
+
+    .prominent-actors {
+        display: flex;
+        flex-direction: column;
+
+        .section-header {
+            text-align: center;
+        }
+
+        .section-body {
+
+            .swiper-section {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 10px;
+
+                .swiper-container {
+                    padding: 24px 24px 40px;
+                    padding: 0;
+                    position: relative;
+                    width: 95%;
+                }
+
+            }
+        }
+    }
+
+    .most-popular-actors {
+        display: flex;
+        flex-direction: column;
+
+        .section-header {
+            text-align: center;
+        }
+
+        .section-body {
+
+            .swiper-section {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 10px;
+
+                .swiper-container {
+                    padding: 24px 24px 40px;
+                    padding: 0;
+                    position: relative;
+                    width: 95%;
+                }
+
+            }
+        }
+    }
+
+    .faq-section {
+        padding: 0 50px 100px 50px;
         display: flex;
         gap: 100px;
 

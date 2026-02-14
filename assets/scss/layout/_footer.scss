@@ -50,20 +50,33 @@ footer {
 
     .footer-nav {
         display: flex;
-        justify-content: space-between;
         align-items: center;
+        justify-content: space-between;
 
-        a {
-            color: #fff;
-            font-size: 16px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 120%;
+        .navs {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            a {
+                color: #fff;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 120%;
+                padding: 12px;
+            }
         }
+
+
 
         .social-links {
             display: flex;
             align-items: center;
+
+            img{
+                width: 24px;
+                height: 24px;
+            }
 
             span {
                 margin-left: 16px;

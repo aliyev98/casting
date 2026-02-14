@@ -7,434 +7,1053 @@
     <title>Casting</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
     <link rel="stylesheet" href="assets/css/style.css">
 
 </head>
 
 <body>
 
-    <div class="homepage-container">
+    <div class="page-container">
 
-        <!-- homepage head start -->
-        <div class="homepage-head">
+        <div class="homepage-container">
 
-            <header>
+            <!-- homepage head start -->
+            <div class="homepage-head">
 
-                <!-- logo -->
-                <a href="index.html" class="logo-div">
-                    <img src="assets/images/logo.png" alt="">
-                    <span>Casting</span>
-                </a>
-                <!-- nav -->
-                <nav>
-                    <a href="index.html">
-                        <div class="circle"></div>
-                        <span>Ana səhifə</span>
+                <header>
+
+                    <!-- logo -->
+                    <a href="index.html" class="logo-div">
+                        <img src="assets/images/logo.png" alt="">
+                        <span>Casting</span>
                     </a>
-                    <a href="about.html">
-                        <div class="circle"></div>
-                        <span>Haqqımızda</span>
-                    </a>
-                    <a href="casts.html">
-                        <div class="circle"></div>
-                        <span>Kastlar</span>
-                    </a>
-                    <a href="blog.html">
-                        <div class="circle"></div>
-                        <span>Bloq</span>
-                    </a>
-                    <a href="contact.html">
-                        <div class="circle"></div>
-                        <span>Əlaqə</span>
-                    </a>
-                </nav>
-
-                <div class="header-actions">
-
-                    <div class="header-search-div" id="searchBox">
-                        <img src="assets/icons/search.svg" alt="Search" class="search-icon">
-                        <input type="text" placeholder="Axtar..." class="search-input" />
-                    </div>
-
-                    <div class="btn-group">
-                        <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown"
-                            aria-expanded="false">
+                    <!-- nav -->
+                    <nav>
+                        <a href="index.html">
                             <div class="circle"></div>
-                            AZ
-                        </button>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">En</a></li>
-                            <li><a class="dropdown-item" href="#">Ru</a></li>
-                        </ul>
-                    </div>
+                            <span>Ana səhifə</span>
+                        </a>
+                        <a href="about.html">
+                            <div class="circle"></div>
+                            <span>Haqqımızda</span>
+                        </a>
+                        <a href="actors.html">
+                            <div class="circle"></div>
+                            <span>Aktyorlar</span>
+                        </a>
+                        <a href="blog.html">
+                            <div class="circle"></div>
+                            <span>Bloq</span>
+                        </a>
+                        <a href="contact.html">
+                            <div class="circle"></div>
+                            <span>Əlaqə</span>
+                        </a>
+                    </nav>
 
-                    <a href="castingForm.html" class="hover-button">
-                        <span class="label">Aktyor ol</span>
-                        <img src="assets/icons/arrow-up-white.svg" alt="">
-                    </a>
+                    <div class="header-actions">
 
-                    <a href="castingForm.html" class="hover-button">
-                        <span class="label">Giriş</span>
-                        <img src="assets/icons/arrow-up-white.svg" alt="">
-                    </a>
+                        <div class="header-search-div" id="searchBox">
+                            <img src="assets/icons/search.svg" alt="Search" class="search-icon">
+                            <input type="text" placeholder="Axtar..." class="search-input" />
+                        </div>
 
-                </div>
-
-            </header>
-
-            <div class="homepage-hero">
-
-                <div class="hero-intro">
-
-                    <span class="hero-title">Gələcəyin aktyoru ol!</span>
-                    <p class="hero-description">Bizə qoşul ki, aktyorluq kariyeranda məqsədlərinə doğru birlikdə
-                        addımlayaq!</p>
-
-                    <div class="hero-actions">
+                        <div class="btn-group">
+                            <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <div class="circle"></div>
+                                <span>Az</span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">En</a></li>
+                                <li><a class="dropdown-item" href="#">Ru</a></li>
+                            </ul>
+                        </div>
 
                         <a href="castingForm.html" class="hover-button">
                             <span class="label">Aktyor ol</span>
                             <img src="assets/icons/arrow-up-white.svg" alt="">
                         </a>
 
-                        <a href="about.html" class="hover-button-white">
-                            <span class="label">Daha ətraflı</span>
-                            <img src="assets/icons/arrow-up.svg" alt="">
+                        <a href="castingForm.html" class="hover-button">
+                            <span class="label">Giriş</span>
+                            <img src="assets/icons/arrow-up-white.svg" alt="">
                         </a>
 
                     </div>
+
+                </header>
+
+                <div class="homepage-hero">
+
+                    <div class="hero-intro">
+
+                        <span class="hero-title">Gələcəyin aktyoru ol!</span>
+                        <p class="hero-description">Bizə qoşul ki, aktyorluq kariyeranda məqsədlərinə doğru birlikdə
+                            addımlayaq!</p>
+
+                        <div class="hero-actions">
+
+                            <a href="castingForm.html" class="hover-button">
+                                <span class="label">Aktyor ol</span>
+                                <img src="assets/icons/arrow-up-white.svg" alt="">
+                            </a>
+
+                            <a href="about.html" class="hover-button-white">
+                                <span class="label">Daha ətraflı</span>
+                                <img src="assets/icons/arrow-up.svg" alt="">
+                            </a>
+
+                        </div>
+                    </div>
+
+                    <form class="hero-form">
+
+                        <div class="form-header">
+                            <span class="form-title">Aktyor tap</span>
+                        </div>
+
+                        <div class="form-body">
+
+                            <!-- cins -->
+                            <div class="select-type">
+
+                                <label for="sex" class="hero-form-label"><span>*</span>Cins</label>
+
+                                <div class="selects">
+
+                                    <select class="custom-form-select" name="sex" id="sex">
+                                        <option value="all">Hamısı</option>
+                                        <option value="male">Kişi</option>
+                                        <option value="female">Qadın</option>
+                                    </select>
+
+                                </div>
+
+                            </div>
+
+                            <!-- şəhər -->
+                            <div class="select-type">
+
+                                <label for="city" class="hero-form-label"><span>*</span>Şəhər</label>
+
+                                <div class="selects">
+
+                                    <select class="custom-form-select" name="city" id="city">
+                                        <option value="all">Hamısı</option>
+                                        <option value="male">Naxçıvan</option>
+                                        <option value="female">Bakı</option>
+                                    </select>
+
+                                </div>
+
+                            </div>
+
+                            <!-- yaş -->
+                            <div class="select-type">
+
+                                <label for="age" class="hero-form-label"><span>*</span>Yaş</label>
+
+                                <div class="selects">
+
+                                    <select class="custom-form-select" name="min_age" id="amin_ge" required>
+                                        <option value="" disabled selected hidden>min</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                    </select>
+
+                                    <select class="custom-form-select" name="max_age" id="max_age" required>
+                                        <option value="" disabled selected hidden>max</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                    </select>
+
+                                </div>
+
+                            </div>
+
+                            <!-- boy -->
+                            <div class="select-type">
+
+                                <label for="length" class="hero-form-label"><span>*</span>Boy</label>
+
+                                <div class="selects">
+
+                                    <select class="custom-form-select" name="length" id="length" required>
+                                        <option value="" disabled selected hidden>min</option>
+                                        <option value="1">160</option>
+                                        <option value="2">161</option>
+                                    </select>
+
+                                    <select class="custom-form-select" name="age" id="age" required>
+                                        <option value="" disabled selected hidden>max</option>
+                                        <option value="1">160</option>
+                                        <option value="2">161</option>
+                                    </select>
+
+                                </div>
+
+                            </div>
+
+                            <!-- saç -->
+                            <div class="select-type">
+
+                                <label for="hair" class="hero-form-label"><span>*</span>Saç rəngi</label>
+
+                                <div class="selects">
+
+                                    <select class="custom-form-select" name="hair" id="hair">
+                                        <option value="all">Hamısı</option>
+                                        <option value="male">Qara</option>
+                                        <option value="female">Sarı</option>
+                                    </select>
+
+                                </div>
+
+                            </div>
+
+                            <!-- göz -->
+                            <div class="select-type">
+
+                                <label for="eye" class="hero-form-label"><span>*</span>Göz rəngi</label>
+
+                                <div class="selects">
+
+                                    <select class="custom-form-select" name="eye" id="eye">
+                                        <option value="all">Hamısı</option>
+                                        <option value="male">Qara</option>
+                                        <option value="female">Qəhvəyi</option>
+                                    </select>
+
+                                </div>
+
+                            </div>
+
+                            <!-- dil -->
+                            <div class="select-type">
+
+                                <label for="language" class="hero-form-label"><span>*</span>Bildiyi dillər</label>
+
+                                <div class="selects">
+
+                                    <select class="custom-form-select" name="language" id="language">
+                                        <option value="all">Hamısı</option>
+                                        <option value="male">Azərbaycan</option>
+                                        <option value="female">İngilis</option>
+                                    </select>
+
+                                </div>
+
+                            </div>
+
+                            <!-- bacarıq -->
+                            <div class="select-type">
+
+                                <label for="skill" class="hero-form-label"><span>*</span>Bacarıqlar</label>
+
+                                <div class="selects">
+
+                                    <select class="custom-form-select" name="skill" id="skill">
+                                        <option value="all">Hamısı</option>
+                                        <option value="male">At sürmək</option>
+                                        <option value="female">Eşşəyə minmək</option>
+                                    </select>
+
+                                </div>
+
+                            </div>
+
+                            <!-- çəki -->
+                            <div class="select-type">
+
+                                <label for="weigh" class="hero-form-label"><span>*</span>Çəki</label>
+
+                                <div class="selects">
+
+                                    <select class="custom-form-select" name="min_weigh" id="min_weigh" required>
+                                        <option value="" disabled selected hidden>min</option>
+                                        <option value="1">40</option>
+                                        <option value="2">40</option>
+                                    </select>
+
+                                    <select class="custom-form-select" name="max_weigh" id="max_weigh" required>
+                                        <option value="" disabled selected hidden>max</option>
+                                        <option value="1">160</option>
+                                        <option value="2">161</option>
+                                    </select>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="form-footer">
+
+                            <button class="form-button">
+                                <span>Axtar</span>
+                            </button>
+
+                        </div>
+
+                    </form>
+
                 </div>
 
-                <form class="hero-form">
+            </div>
+            <!-- homepage head end -->
 
-                    <div class="form-header">
-                        <span class="form-title">Aktyor tap</span>
-                    </div>
+            <!-- our partners start -->
+            <div class="homepage-our-partners">
 
-                    <div class="form-body">
+                <span class="section-title">Partnyorlarımız</span>
 
-                        <!-- cins -->
-                        <div class="select-type">
+                <div class="logo-strip">
 
-                            <label for="sex" class="hero-form-label"><span>*</span>Cins</label>
-
-                            <div class="selects">
-
-                                <select class="custom-form-select" name="sex" id="sex">
-                                    <option value="all">Hamısı</option>
-                                    <option value="male">Kişi</option>
-                                    <option value="female">Qadın</option>
-                                </select>
-
-                            </div>
-
+                    <div class="track">
+                        <div class="logo-div">
+                            <img src="assets/images/partner.svg" alt="">
                         </div>
-
-                        <!-- şəhər -->
-                        <div class="select-type">
-
-                            <label for="city" class="hero-form-label"><span>*</span>Şəhər</label>
-
-                            <div class="selects">
-
-                                <select class="custom-form-select" name="city" id="city">
-                                    <option value="all">Hamısı</option>
-                                    <option value="male">Naxçıvan</option>
-                                    <option value="female">Bakı</option>
-                                </select>
-
-                            </div>
-
+                        <div class="logo-div">
+                            <img src="assets/images/partner2.svg" alt="">
                         </div>
-
-                        <!-- yaş -->
-                        <div class="select-type">
-
-                            <label for="age" class="hero-form-label"><span>*</span>Yaş</label>
-
-                            <div class="selects">
-
-                                <select class="custom-form-select" name="min_age" id="amin_ge" required>
-                                    <option value="" disabled selected hidden>min</option>
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                </select>
-
-                                <select class="custom-form-select" name="max_age" id="max_age" required>
-                                    <option value="" disabled selected hidden>max</option>
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                </select>
-
-                            </div>
-
+                        <div class="logo-div">
+                            <img src="assets/images/partner3.svg" alt="">
                         </div>
-
-                        <!-- boy -->
-                        <div class="select-type">
-
-                            <label for="length" class="hero-form-label"><span>*</span>Boy</label>
-
-                            <div class="selects">
-
-                                <select class="custom-form-select" name="length" id="length" required>
-                                    <option value="" disabled selected hidden>min</option>
-                                    <option value="1">160</option>
-                                    <option value="2">161</option>
-                                </select>
-
-                                <select class="custom-form-select" name="age" id="age" required>
-                                    <option value="" disabled selected hidden>max</option>
-                                    <option value="1">160</option>
-                                    <option value="2">161</option>
-                                </select>
-
-                            </div>
-
+                        <div class="logo-div">
+                            <img src="assets/images/partner4.svg" alt="">
                         </div>
-
-                        <!-- saç -->
-                        <div class="select-type">
-
-                            <label for="hair" class="hero-form-label"><span>*</span>Saç rəngi</label>
-
-                            <div class="selects">
-
-                                <select class="custom-form-select" name="hair" id="hair">
-                                    <option value="all">Hamısı</option>
-                                    <option value="male">Qara</option>
-                                    <option value="female">Sarı</option>
-                                </select>
-
-                            </div>
-
+                        <div class="logo-div">
+                            <img src="assets/images/partner2.svg" alt="">
                         </div>
-
-                        <!-- göz -->
-                        <div class="select-type">
-
-                            <label for="eye" class="hero-form-label"><span>*</span>Göz rəngi</label>
-
-                            <div class="selects">
-
-                                <select class="custom-form-select" name="eye" id="eye">
-                                    <option value="all">Hamısı</option>
-                                    <option value="male">Qara</option>
-                                    <option value="female">Qəhvəyi</option>
-                                </select>
-
-                            </div>
-
+                        <div class="logo-div">
+                            <img src="assets/images/partner5.svg" alt="">
                         </div>
-
-                        <!-- dil -->
-                        <div class="select-type">
-
-                            <label for="language" class="hero-form-label"><span>*</span>Bildiyi dillər</label>
-
-                            <div class="selects">
-
-                                <select class="custom-form-select" name="language" id="language">
-                                    <option value="all">Hamısı</option>
-                                    <option value="male">Azərbaycan</option>
-                                    <option value="female">İngilis</option>
-                                </select>
-
-                            </div>
-
+                        <div class="logo-div">
+                            <img src="assets/images/partner.svg" alt="">
                         </div>
-
-                        <!-- bacarıq -->
-                        <div class="select-type">
-
-                            <label for="skill" class="hero-form-label"><span>*</span>Bacarıqlar</label>
-
-                            <div class="selects">
-
-                                <select class="custom-form-select" name="skill" id="skill">
-                                    <option value="all">Hamısı</option>
-                                    <option value="male">At sürmək</option>
-                                    <option value="female">Eşşəyə minmək</option>
-                                </select>
-
-                            </div>
-
-                        </div>
-
-                        <!-- çəki -->
-                        <div class="select-type">
-
-                            <label for="weigh" class="hero-form-label"><span>*</span>Çəki</label>
-
-                            <div class="selects">
-
-                                <select class="custom-form-select" name="min_weigh" id="min_weigh" required>
-                                    <option value="" disabled selected hidden>min</option>
-                                    <option value="1">40</option>
-                                    <option value="2">40</option>
-                                </select>
-
-                                <select class="custom-form-select" name="max_weigh" id="max_weigh" required>
-                                    <option value="" disabled selected hidden>max</option>
-                                    <option value="1">160</option>
-                                    <option value="2">161</option>
-                                </select>
-
-                            </div>
-
+                        <div class="logo-div">
+                            <img src="assets/images/partner3.svg" alt="">
                         </div>
 
                     </div>
 
-                    <div class="form-footer">
-
-                        <button class="form-button">
-                            <span>Axtar</span>
-                        </button>
-
-                    </div>
-
-                </form>
+                </div>
 
             </div>
+            <!-- our partners end -->
+
+            <!-- about us start -->
+            <div class="homepage-about-us">
+
+                <div class="section-intro">
+                    <span class="section-title">Niyə biz?</span>
+                    <p class="section-description">
+                        Çünki biz sizə həvəskar komandamız və sizlərə verdiyimiz dəyər ilə kariyarınzda uğurla
+                        addımlamağa kömək edirik.
+                    </p>
+                </div>
+
+                <div class="section-body">
+
+                    <div class="about-us-card">
+
+                        <div class="card-img-div">
+                            <img src="assets/icons/personal.svg" alt="">
+                        </div>
+
+                        <div class="card-content">
+                            <span class="card-title">Fərdi yanaşma</span>
+                            <p class="card-description">İstedadınızı dəyərləndirir, sizə ən uyğun rolları seçirik.</p>
+                        </div>
+
+                    </div>
+
+                    <div class="about-us-card">
+
+                        <div class="card-img-div">
+                            <img src="assets/icons/opportunity.svg" alt="">
+                        </div>
+
+                        <div class="card-content">
+                            <span class="card-title">Geniş imkanlar</span>
+                            <p class="card-description">Kino, reklam və teatr dünyasında geniş əlaqələrə sahibik.</p>
+                        </div>
+
+                    </div>
+
+                    <div class="about-us-card">
+
+                        <div class="card-img-div">
+                            <img src="assets/icons/support.svg" alt="">
+                        </div>
+
+                        <div class="card-content">
+                            <span class="card-title">Dəstək və inkişaf</span>
+                            <p class="card-description">Eyni zamanda inkişafınız üçün dəstək veririk.</p>
+                        </div>
+
+                    </div>
+
+                    <a href="castingForm.html" class="hover-button">
+                        <span class="label">Daha ətraflı</span>
+                        <img src="assets/icons/arrow-up-white.svg" alt="">
+                    </a>
+
+                </div>
+
+            </div>
+            <!-- about us end -->
+
+            <!-- prominent actors start -->
+            <div class="prominent-actors">
+
+                <div class="section-header">
+                    <span class="section-title">Önə çıxan aktyorlar</span>
+                </div>
+
+                <div class="section-body">
+
+                    <div class="swiper-section">
+
+                        <div class="swiper-container">
+
+                            <div class="swiper actors-swiper" id="prominentActorsSwiper">
+
+                                <div class="swiper-wrapper">
+
+                                    <!-- Slides -->
+
+                                    <div class="swiper-slide">
+
+                                        <div class="actor-card">
+
+                                            <div class="actor-image">
+
+                                                <img src="assets/images/actor-img.jpg" alt="">
+
+                                                <a href="actorDetails.html" class="actor-details">Profilə bax</a>
+
+                                            </div>
+
+                                            <div class="card-body">
+
+                                                <span class="actor-name">Paputu Usta</span>
+
+                                                <p class="actor-description">
+                                                    Salam, mənim adım Paputudur. Azərbaycan
+                                                    dövlət Memarlıq və İncəsənət Universitetindən məzun olmuşam. 21
+                                                    yaşım
+                                                    var. Bir çox casting şirkətləri ilə əməkdaşlıq etmişəm və
+                                                    etməkdəyəm.
+                                                </p>
+
+                                            </div>
+
+                                            <div class="rating-badget">
+                                                <img src="assets/icons/star-icon.svg" alt="">
+                                                <span>3.4</span>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="swiper-slide">
+
+                                        <div class="actor-card">
+
+                                            <div class="actor-image">
+
+                                                <img src="assets/images/actor-img2.jpg" alt="">
+
+                                                <a href="actorDetails.html" class="actor-details">Profilə bax</a>
+
+                                            </div>
+
+                                            <div class="card-body">
+
+                                                <span class="actor-name">Paputu Usta</span>
+
+                                                <p class="actor-description">
+                                                    Salam, mənim adım Paputudur. Azərbaycan
+                                                    dövlət Memarlıq və İncəsənət Universitetindən məzun olmuşam. 21
+                                                    yaşım
+                                                    var. Bir çox casting şirkətləri ilə əməkdaşlıq etmişəm və
+                                                    etməkdəyəm.
+                                                </p>
+
+                                            </div>
+
+                                            <div class="rating-badget">
+                                                <img src="assets/icons/star-icon.svg" alt="">
+                                                <span>3.4</span>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="swiper-slide">
+
+                                        <div class="actor-card">
+
+                                            <div class="actor-image">
+
+                                                <img src="assets/images/actor-img3.jpg" alt="">
+
+                                                <a href="actorDetails.html" class="actor-details">Profilə bax</a>
+
+                                            </div>
+
+                                            <div class="card-body">
+
+                                                <span class="actor-name">Paputu Usta</span>
+
+                                                <p class="actor-description">
+                                                    Salam, mənim adım Paputudur. Azərbaycan
+                                                    dövlət Memarlıq və İncəsənət Universitetindən məzun olmuşam. 21
+                                                    yaşım
+                                                    var. Bir çox casting şirkətləri ilə əməkdaşlıq etmişəm və
+                                                    etməkdəyəm.
+                                                </p>
+
+                                            </div>
+
+                                            <div class="rating-badget">
+                                                <img src="assets/icons/star-icon.svg" alt="">
+                                                <span>3.4</span>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="swiper-slide">
+
+                                        <div class="actor-card">
+
+                                            <div class="actor-image">
+
+                                                <img src="assets/images/actor-img2.jpg" alt="">
+
+                                                <a href="actorDetails.html" class="actor-details">Profilə bax</a>
+
+                                            </div>
+
+                                            <div class="card-body">
+
+                                                <span class="actor-name">Paputu Usta</span>
+
+                                                <p class="actor-description">
+                                                    Salam, mənim adım Paputudur. Azərbaycan
+                                                    dövlət Memarlıq və İncəsənət Universitetindən məzun olmuşam. 21
+                                                    yaşım
+                                                    var. Bir çox casting şirkətləri ilə əməkdaşlıq etmişəm və
+                                                    etməkdəyəm.
+                                                </p>
+
+                                            </div>
+
+                                            <div class="rating-badget">
+                                                <img src="assets/icons/star-icon.svg" alt="">
+                                                <span>3.4</span>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="swiper-slide">
+
+                                        <div class="actor-card">
+
+                                            <div class="actor-image">
+
+                                                <img src="assets/images/actor-img.jpg" alt="">
+
+                                                <a href="actorDetails.html" class="actor-details">Profilə bax</a>
+
+                                            </div>
+
+                                            <div class="card-body">
+
+                                                <span class="actor-name">Paputu Usta</span>
+
+                                                <p class="actor-description">
+                                                    Salam, mənim adım Paputudur. Azərbaycan
+                                                    dövlət Memarlıq və İncəsənət Universitetindən məzun olmuşam. 21
+                                                    yaşım
+                                                    var. Bir çox casting şirkətləri ilə əməkdaşlıq etmişəm və
+                                                    etməkdəyəm.
+                                                </p>
+
+                                            </div>
+
+                                            <div class="rating-badget">
+                                                <img src="assets/icons/star-icon.svg" alt="">
+                                                <span>3.4</span>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="swiper-slide">
+
+                                        <div class="actor-card">
+
+                                            <div class="actor-image">
+
+                                                <img src="assets/images/actor-img3.jpg" alt="">
+
+                                                <a href="actorDetails.html" class="actor-details">Profilə bax</a>
+
+                                            </div>
+
+                                            <div class="card-body">
+
+                                                <span class="actor-name">Paputu Usta</span>
+
+                                                <p class="actor-description">
+                                                    Salam, mənim adım Paputudur. Azərbaycan
+                                                    dövlət Memarlıq və İncəsənət Universitetindən məzun olmuşam. 21
+                                                    yaşım
+                                                    var. Bir çox casting şirkətləri ilə əməkdaşlıq etmişəm və
+                                                    etməkdəyəm.
+                                                </p>
+
+                                            </div>
+
+                                            <div class="rating-badget">
+                                                <img src="assets/icons/star-icon.svg" alt="">
+                                                <span>3.4</span>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <!-- Pagination -->
+                                <div class="swiper-pagination"></div>
+                            </div>
+
+                            <!-- Custom nav buttons -->
+                            <button class="nav-btn nav-prev" type="button" aria-label="Prev">
+                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                    stroke="#000000">
+                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                    <g id="SVGRepo_iconCarrier">
+                                        <path d="M4 12H20M4 12L8 8M4 12L8 16" stroke="#fff" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </g>
+                                </svg>
+                            </button>
+
+                            <button class="nav-btn nav-next" type="button" aria-label="Next">
+                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                    <g id="SVGRepo_iconCarrier">
+                                        <path d="M4 12H20M20 12L16 8M20 12L16 16" stroke="#fff" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </g>
+                                </svg>
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- prominent actors end -->
+
+            <!-- most popular actors start -->
+            <div class="most-popular-actors">
+
+                <div class="section-header">
+                    <span class="section-title">Ən çox baxılan aktyorlar</span>
+                </div>
+
+                <div class="section-body">
+
+                    <div class="swiper-section">
+
+                        <div class="swiper-container">
+
+                            <div class="swiper actors-swiper" id="prominentActorsSwiper">
+
+                                <div class="swiper-wrapper">
+
+                                    <!-- Slides -->
+
+                                    <div class="swiper-slide">
+
+                                        <div class="actor-card">
+
+                                            <div class="actor-image">
+
+                                                <img src="assets/images/actor-img.jpg" alt="">
+
+                                                <a href="actorDetails.html" class="actor-details">Profilə bax</a>
+
+                                            </div>
+
+                                            <div class="card-body">
+
+                                                <span class="actor-name">Paputu Usta</span>
+
+                                                <p class="actor-description">
+                                                    Salam, mənim adım Paputudur. Azərbaycan
+                                                    dövlət Memarlıq və İncəsənət Universitetindən məzun olmuşam. 21
+                                                    yaşım
+                                                    var. Bir çox casting şirkətləri ilə əməkdaşlıq etmişəm və
+                                                    etməkdəyəm.
+                                                </p>
+
+                                            </div>
+
+                                            <div class="popular-badget"><span>Populyar</span></div>
+
+                                            <div class="rating-badget">
+                                                <img src="assets/icons/star-icon.svg" alt="">
+                                                <span>3.4</span>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="swiper-slide">
+
+                                        <div class="actor-card">
+
+                                            <div class="actor-image">
+
+                                                <img src="assets/images/actor-img2.jpg" alt="">
+
+                                                <a href="actorDetails.html" class="actor-details">Profilə bax</a>
+
+                                            </div>
+
+                                            <div class="card-body">
+
+                                                <span class="actor-name">Paputu Usta</span>
+
+                                                <p class="actor-description">
+                                                    Salam, mənim adım Paputudur. Azərbaycan
+                                                    dövlət Memarlıq və İncəsənət Universitetindən məzun olmuşam. 21
+                                                    yaşım
+                                                    var. Bir çox casting şirkətləri ilə əməkdaşlıq etmişəm və
+                                                    etməkdəyəm.
+                                                </p>
+
+                                            </div>
+
+                                            <div class="popular-badget"><span>Populyar</span></div>
+
+                                            <div class="rating-badget">
+                                                <img src="assets/icons/star-icon.svg" alt="">
+                                                <span>3.4</span>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="swiper-slide">
+
+                                        <div class="actor-card">
+
+                                            <div class="actor-image">
+
+                                                <img src="assets/images/actor-img3.jpg" alt="">
+
+                                                <a href="actorDetails.html" class="actor-details">Profilə bax</a>
+
+                                            </div>
+
+                                            <div class="card-body">
+
+                                                <span class="actor-name">Paputu Usta</span>
+
+                                                <p class="actor-description">
+                                                    Salam, mənim adım Paputudur. Azərbaycan
+                                                    dövlət Memarlıq və İncəsənət Universitetindən məzun olmuşam. 21
+                                                    yaşım
+                                                    var. Bir çox casting şirkətləri ilə əməkdaşlıq etmişəm və
+                                                    etməkdəyəm.
+                                                </p>
+
+                                            </div>
+
+                                            <div class="popular-badget"><span>Populyar</span></div>
+
+                                            <div class="rating-badget">
+                                                <img src="assets/icons/star-icon.svg" alt="">
+                                                <span>3.4</span>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="swiper-slide">
+
+                                        <div class="actor-card">
+
+                                            <div class="actor-image">
+
+                                                <img src="assets/images/actor-img2.jpg" alt="">
+
+                                                <a href="actorDetails.html" class="actor-details">Profilə bax</a>
+
+                                            </div>
+
+                                            <div class="card-body">
+
+                                                <span class="actor-name">Paputu Usta</span>
+
+                                                <p class="actor-description">
+                                                    Salam, mənim adım Paputudur. Azərbaycan
+                                                    dövlət Memarlıq və İncəsənət Universitetindən məzun olmuşam. 21
+                                                    yaşım
+                                                    var. Bir çox casting şirkətləri ilə əməkdaşlıq etmişəm və
+                                                    etməkdəyəm.
+                                                </p>
+
+                                            </div>
+
+                                            <div class="popular-badget"><span>Populyar</span></div>
+
+                                            <div class="rating-badget">
+                                                <img src="assets/icons/star-icon.svg" alt="">
+                                                <span>3.4</span>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="swiper-slide">
+
+                                        <div class="actor-card">
+
+                                            <div class="actor-image">
+
+                                                <img src="assets/images/actor-img.jpg" alt="">
+
+                                                <a href="actorDetails.html" class="actor-details">Profilə bax</a>
+
+                                            </div>
+
+                                            <div class="card-body">
+
+                                                <span class="actor-name">Paputu Usta</span>
+
+                                                <p class="actor-description">
+                                                    Salam, mənim adım Paputudur. Azərbaycan
+                                                    dövlət Memarlıq və İncəsənət Universitetindən məzun olmuşam. 21
+                                                    yaşım
+                                                    var. Bir çox casting şirkətləri ilə əməkdaşlıq etmişəm və
+                                                    etməkdəyəm.
+                                                </p>
+
+                                            </div>
+
+                                            <div class="popular-badget"><span>Populyar</span></div>
+
+                                            <div class="rating-badget">
+                                                <img src="assets/icons/star-icon.svg" alt="">
+                                                <span>3.4</span>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="swiper-slide">
+
+                                        <div class="actor-card">
+
+                                            <div class="actor-image">
+
+                                                <img src="assets/images/actor-img3.jpg" alt="">
+
+                                                <a href="actorDetails.html" class="actor-details">Profilə bax</a>
+
+                                            </div>
+
+                                            <div class="card-body">
+
+                                                <span class="actor-name">Paputu Usta</span>
+
+                                                <p class="actor-description">
+                                                    Salam, mənim adım Paputudur. Azərbaycan
+                                                    dövlət Memarlıq və İncəsənət Universitetindən məzun olmuşam. 21
+                                                    yaşım
+                                                    var. Bir çox casting şirkətləri ilə əməkdaşlıq etmişəm və
+                                                    etməkdəyəm.
+                                                </p>
+
+                                            </div>
+
+                                            <div class="popular-badget"><span>Populyar</span></div>
+
+                                            <div class="rating-badget">
+                                                <img src="assets/icons/star-icon.svg" alt="">
+                                                <span>3.4</span>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <!-- Pagination -->
+                                <div class="swiper-pagination"></div>
+                            </div>
+
+                            <!-- Custom nav buttons -->
+                            <button class="nav-btn nav-prev" type="button" aria-label="Prev">
+                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                    stroke="#000000">
+                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                    <g id="SVGRepo_iconCarrier">
+                                        <path d="M4 12H20M4 12L8 8M4 12L8 16" stroke="#fff" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </g>
+                                </svg>
+                            </button>
+
+                            <button class="nav-btn nav-next" type="button" aria-label="Next">
+                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                    <g id="SVGRepo_iconCarrier">
+                                        <path d="M4 12H20M20 12L16 8M20 12L16 16" stroke="#fff" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </g>
+                                </svg>
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- most popular actors end -->
+
+            <!-- faq start -->
+            <div class="faq-section">
+
+                <div class="section-intro">
+                    <span class="section-title">Ən çox soruşulan suallar</span>
+                    <p class="section-description-gray">Suallarınız var? Tək deyilsiniz. Axtardığınızı tapa
+                        bilmirsinizsə,
+                        sadəcə bizimlə əlaqə saxlayın — biz həmişə sizə kömək etməkdən məmnunuq.</p>
+
+                    <a href="" class="hover-button">
+                        <span class="label">Bizimlə əlaqə</span>
+                        <img src="assets/icons/arrow-up-white.svg" alt="">
+                    </a>
+                </div>
+
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                aria-controls="flush-collapseOne">
+                                <span>1. Casting nədir?</span>
+                                <img src="assets/icons/accordion-icon.svg" alt="">
+                            </button>
+                        </div>
+
+                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                Bura Azərbaycanda aktyorlar, aktyor olmaq istəyənlər və rejissorlar, prodüserlər,
+                                reklam şirkətləri üçün nəzərdə tutulmuş onlayn platformadır.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                aria-controls="flush-collapseTwo">
+                                <span>2. Sizə necə müraciət edə bilərəm?</span>
+                                <img src="assets/icons/accordion-icon.svg" alt="">
+                            </button>
+                        </div>
+
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                Profil yaradaraq lazım olan məlumatları tam şəkildə doldurmaqla aktyor olaraq müraciət
+                                edə
+                                bilərsiniz.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                aria-controls="flush-collapseThree">
+                                <span>3. Bizə kimlər müraciət edə bilər?</span>
+                                <img src="assets/icons/accordion-icon.svg" alt="">
+                            </button>
+                        </div>
+
+                        <div id="flush-collapseThree" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                Aktyorluq bacarığı və həvəsi olan hərkəs casting.az-a müraciət edə və aktyor kimi profil
+                                yarada bilər.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseFour" aria-expanded="false"
+                                aria-controls="flush-collapseFour">
+                                <span>4. Niyə hesab yaratmalıyam?</span>
+                                <img src="assets/icons/accordion-icon.svg" alt="">
+                            </button>
+                        </div>
+
+                        <div id="flush-collapseFour" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                Aktyor olmaq istəyən və bu sahəyə həvəsi olan hərkəs öz bacarıq və məlumatlarını düzgün
+                                şəxslərin qarşısına çıxması üçün bu platformada qeydiyyatdan keçməlidir.
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- faq end -->
 
         </div>
-        <!-- homepage head end -->
-
-        <!-- our partners start -->
-        <div class="homepage-our-partners">
-
-            <span class="section-title">Partnyorlarımız</span>
-
-            <div class="logo-strip">
-
-                <div class="track">
-                    <div class="logo-div">
-                        <img src="assets/images/partner.svg" alt="">
-                    </div>
-                    <div class="logo-div">
-                        <img src="assets/images/partner2.svg" alt="">
-                    </div>
-                    <div class="logo-div">
-                        <img src="assets/images/partner3.svg" alt="">
-                    </div>
-                    <div class="logo-div">
-                        <img src="assets/images/partner4.svg" alt="">
-                    </div>
-                    <div class="logo-div">
-                        <img src="assets/images/partner2.svg" alt="">
-                    </div>
-                    <div class="logo-div">
-                        <img src="assets/images/partner5.svg" alt="">
-                    </div>
-                    <div class="logo-div">
-                        <img src="assets/images/partner.svg" alt="">
-                    </div>
-                    <div class="logo-div">
-                        <img src="assets/images/partner3.svg" alt="">
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-        <!-- our partners end -->
-
-        <!-- faq start -->
-        <div class="faq-section">
-
-            <div class="section-intro">
-                <span class="section-title">Ən çox soruşulan suallar</span>
-                <p class="section-description-gray">Suallarınız var? Tək deyilsiniz. Axtardığınızı tapa bilmirsinizsə,
-                    sadəcə bizimlə əlaqə saxlayın — biz həmişə sizə kömək etməkdən məmnunuq.</p>
-
-                <a href="" class="hover-button">
-                    <span class="label">Bizimlə əlaqə</span>
-                    <img src="assets/icons/arrow-up-white.svg" alt="">
-                </a>
-            </div>
-
-            <div class="accordion accordion-flush" id="accordionFlushExample">
-
-                <div class="accordion-item">
-                    <div class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                            <span>1. Casting nədir?</span>
-                            <img src="assets/icons/accordion-icon.svg" alt="">
-                        </button>
-                    </div>
-
-                    <div id="flush-collapseOne" class="accordion-collapse collapse"
-                        data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">
-                            Bura Azərbaycanda aktyorlar, aktyor olmaq istəyənlər və rejissorlar, prodüserlər,
-                            reklam şirkətləri üçün nəzərdə tutulmuş onlayn platformadır.
-                        </div>
-                    </div>
-                </div>
-
-                <div class="accordion-item">
-                    <div class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                            <span>2. Sizə necə müraciət edə bilərəm?</span>
-                            <img src="assets/icons/accordion-icon.svg" alt="">
-                        </button>
-                    </div>
-
-                    <div id="flush-collapseTwo" class="accordion-collapse collapse"
-                        data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">
-                            Profil yaradaraq lazım olan məlumatları tam şəkildə doldurmaqla aktyor olaraq müraciət edə
-                            bilərsiniz.
-                        </div>
-                    </div>
-                </div>
-
-                <div class="accordion-item">
-                    <div class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#flush-collapseThree" aria-expanded="false"
-                            aria-controls="flush-collapseThree">
-                            <span>3. Bizə kimlər müraciət edə bilər?</span>
-                            <img src="assets/icons/accordion-icon.svg" alt="">
-                        </button>
-                    </div>
-
-                    <div id="flush-collapseThree" class="accordion-collapse collapse"
-                        data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">
-                            Aktyorluq bacarığı və həvəsi olan hərkəs casting.az-a müraciət edə və aktyor kimi profil
-                            yarada bilər.
-                        </div>
-                    </div>
-                </div>
-
-                <div class="accordion-item">
-                    <div class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#flush-collapseFour" aria-expanded="false"
-                            aria-controls="flush-collapseFour">
-                            <span>4. Niyə hesab yaratmalıyam?</span>
-                            <img src="assets/icons/accordion-icon.svg" alt="">
-                        </button>
-                    </div>
-
-                    <div id="flush-collapseFour" class="accordion-collapse collapse"
-                        data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">
-                            Aktyor olmaq istəyən və bu sahəyə həvəsi olan hərkəs öz bacarıq və məlumatlarını düzgün
-                            şəxslərin qarşısına çıxması üçün bu platformada qeydiyyatdan keçməlidir.
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-        <!-- faq end -->
 
         <!-- footer start -->
         <footer>
@@ -442,7 +1061,7 @@
             <div class="footer-top">
 
                 <div class="footer-title">
-                    <span class="section-title">Aktyor olmaq xəyallarınıza gedən yol burada başlayır.</span>
+                    <span class="section-title">Aktyor olmaq xəyallarınıza gedən yol burada başlayır..!</span>
                 </div>
 
                 <div class="footer-infos">
@@ -463,34 +1082,36 @@
                         <span class="info-content">09:00am - 06:00pm</span>
                     </div>
                 </div>
-                
+
             </div>
 
             <div class="footer-nav">
 
-                <a href="/">Home</a>
-                <a href="aboutUs.html">About us</a>
-                <a href="services.html">Services</a>
-                <a href="blogs.html">Blogs</a>
-                <a href="contactUs.html">Contact us</a>
+                <div class="navs">
+                    <a href="index.html">Ana səhifə</a>
+                    <a href="about.html">Haqqımızda</a>
+                    <a href="actors.html">Aktyorlar</a>
+                    <a href="blog.html">Bloq</a>
+                    <a href="contact.html">Əlaqə</a>
+                </div>
 
                 <div class="social-links">
-                    <span>Social</span>
+                    <span>Social :</span>
                     <a href="#">
-                        <img src="assets/icons/wp-icon-black.svg" alt="">
+                        <img src="assets/icons/wp-icon-white.svg" alt="">
                     </a>
                     <a href="#">
-                        <img src="assets/icons/insta-icon.svg" alt="">
+                        <img src="assets/icons/insta-icon-white.svg" alt="">
                     </a>
                     <a href="#">
-                        <img src="assets/icons/telegram-icon.svg" alt="">
+                        <img src="assets/icons/telegram-icon-white.svg" alt="">
                     </a>
                 </div>
 
             </div>
 
             <div class="footer-bottom">
-                <span class="copyright">© 2026 Ascend Business Consulting</span>
+                <span class="copyright">© 2026 Casting Company</span>
 
                 <div class="bottom-actions">
                     <a href="#">Terms & Conditions</a>
@@ -506,7 +1127,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
         </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="assets/js/searchInput.js"></script>
+    <script src="assets/js/swiper.js"></script>
 
 </body>
 

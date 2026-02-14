@@ -8,17 +8,23 @@
 @use './layout/footer';
 
 // components
-// (buttons)
-@use './components/buttons/hoverButton';
-@use './components/buttons/formButton';
-// (inputs)
-@use './components/inputs/headerSearch';
-// (selects)
-@use './components/selects/formSelect';
 // (cards)
 @use './components/cards/heroForm';
 @use './components/cards/logoStrip';
 @use './components/cards/accordion';
+@use './components/cards/aboutUsCard';
+@use './components/cards/actorCard';
+// (swipers)
+@use './components/swipers/swiper';
+
+// ui
+// (buttons)
+@use './ui/buttons/hoverButton';
+@use './ui/buttons/formButton';
+// (inputs)
+@use './ui/inputs/headerSearch';
+// (selects)
+@use './ui/selects/formSelect';
 
 // pages
 @use './pages/index';
