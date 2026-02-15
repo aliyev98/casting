@@ -1,5 +1,5 @@
 .actors-swiper {
-    padding: 10px 12px 28px;
+    padding: 10px 12px 0px;
 }
 
 .swiper-pagination-bullet {
@@ -11,6 +11,11 @@
 
 .swiper-pagination-bullet-active {
     background: #111;
+}
+
+.swiper-pagination {
+    position: relative !important;
+    margin-top: 20px;
 }
 
 .nav-btn {

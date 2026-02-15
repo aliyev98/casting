@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 body {
   margin: 0;
@@ -56,6 +57,7 @@ header {
   justify-content: space-between;
   align-items: center;
   position: relative;
+  padding: 16px 24px;
 }
 header .logo-div {
   height: 36px;
@@ -486,6 +488,7 @@ footer .footer-bottom .bottom-actions a {
   cursor: pointer;
   position: relative;
   transition: all 0.2s ease-in;
+  text-wrap: wrap;
 }
 .actor-card:hover {
   transform: scale(1.02);
@@ -501,6 +504,13 @@ footer .footer-bottom .bottom-actions a {
   overflow: hidden;
   height: 280px;
   position: relative;
+}
+.actor-card .actor-image .crown {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 28px;
+  height: 28px;
 }
 .actor-card .actor-image img {
   -o-object-fit: cover;
@@ -582,8 +592,97 @@ footer .footer-bottom .bottom-actions a {
   margin-top: 2px;
 }
 
+/* Swiper container */
+.customerSwiper {
+  width: 100%;
+}
+
+/* Fade effektdə slide-lar üst-üstə düşür, ona görə */
+.customerSwiper .swiper-slide {
+  height: auto;
+}
+
+/* ✅ Sola sürüşmə hissi üçün */
+.customerSwiper .swiper-slide .customer-review {
+  transition: transform 1s ease, opacity 1s ease;
+}
+
+/* Active olan normal */
+.customerSwiper .swiper-slide-active .customer-review {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+/* Əvvəlki (fade-out olan) azca sola getsin */
+.customerSwiper .swiper-slide-prev .customer-review {
+  transform: translateX(-40px);
+  opacity: 0;
+}
+
+/* Növbəti (fade-in olan) sağdan gəlsin */
+.customerSwiper .swiper-slide-next .customer-review {
+  transform: translateX(40px);
+  opacity: 0;
+}
+
+/* Sənin mövcud customer-review stillərin olduğu kimi qalır */
+.customer-review {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.customer-review .review-header {
+  display: flex;
+  gap: 16px;
+}
+.customer-review .review-header .customer-image {
+  min-width: 80px;
+  min-height: 80px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.customer-review .review-header .customer-image img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 80px;
+  height: 80px;
+}
+.customer-review .review-header .review-content {
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 120%;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
+}
+.customer-review .review-body {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.customer-review .review-body .customer-name {
+  color: #000;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 120%;
+}
+.customer-review .review-body .customer-position {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 120%;
+}
+
+/* Optional: next button icon rotate */
+.btn-next img {
+  transform: rotate(180deg);
+}
+
 .actors-swiper {
-  padding: 10px 12px 28px;
+  padding: 10px 12px 0px;
 }
 
 .swiper-pagination-bullet {
@@ -595,6 +694,11 @@ footer .footer-bottom .bottom-actions a {
 
 .swiper-pagination-bullet-active {
   background: #111;
+}
+
+.swiper-pagination {
+  position: relative !important;
+  margin-top: 20px;
 }
 
 .nav-btn {
@@ -783,14 +887,13 @@ footer .footer-bottom .bottom-actions a {
   gap: 100px;
 }
 .homepage-container .homepage-head {
-  padding: 16px 24px;
   background: url("/assets/images/hero-img.jpg");
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
 }
 .homepage-container .homepage-head .homepage-hero {
-  padding: 70px 0px 0px 0px;
+  padding: 50px 24px 24px 24px;
   display: flex;
   gap: 100px;
 }
@@ -901,6 +1004,40 @@ footer .footer-bottom .bottom-actions a {
   padding: 0;
   position: relative;
   width: 95%;
+}
+.homepage-container .customer-feedbacks {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding: 0 50px;
+}
+@media only screen and (max-width: 768px) {
+  .homepage-container .customer-feedbacks {
+    gap: 32px;
+    padding: 0 0 50px 0;
+  }
+}
+.homepage-container .customer-feedbacks .section-body {
+  display: flex;
+  gap: 100px;
+  align-items: flex-start;
+}
+@media only screen and (max-width: 768px) {
+  .homepage-container .customer-feedbacks .section-body {
+    flex-direction: column;
+    gap: 16px;
+  }
+}
+.homepage-container .customer-feedbacks .section-body .swipe-buttons {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.homepage-container .customer-feedbacks .section-body .swipe-buttons .swipe-button {
+  border-radius: 50%;
+  border-radius: 100px;
+  background: #7A1E24;
+  padding: 12px;
 }
 .homepage-container .faq-section {
   padding: 0 50px 100px 50px;

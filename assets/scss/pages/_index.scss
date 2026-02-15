@@ -6,14 +6,13 @@
     gap: 100px;
 
     .homepage-head {
-        padding: 16px 24px;
         background: url('/assets/images/hero-img.jpg');
         background-size: cover;
         background-position: top;
         background-repeat: no-repeat;
 
         .homepage-hero {
-            padding: 70px 0px 0px 0px;
+            padding: 50px 24px 24px 24px;
             display: flex;
             gap: 100px;
 
@@ -151,6 +150,42 @@
                     width: 95%;
                 }
 
+            }
+        }
+    }
+
+    .customer-feedbacks {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        padding: 0 50px;
+
+        @include mq(tablet-portrait-up) {
+            gap: 32px;
+            padding: 0 0 50px 0;
+        }
+
+        .section-body {
+            display: flex;
+            gap: 100px;
+            align-items: flex-start;
+
+            @include mq(tablet-portrait-up) {
+                flex-direction: column;
+                gap: 16px;
+            }
+
+            .swipe-buttons {
+                display: flex;
+                align-items: center;
+                gap: 12px;
+
+                .swipe-button {
+                    border-radius: 50%;
+                    border-radius: 100px;
+                    background: #7A1E24;
+                    padding: 12px;
+                }
             }
         }
     }

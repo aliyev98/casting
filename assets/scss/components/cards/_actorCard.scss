@@ -10,6 +10,7 @@
     cursor: pointer;
     position: relative;
     transition: all 0.2s ease-in;
+    text-wrap: wrap;
 
     &:hover {
 
@@ -34,6 +35,14 @@
         overflow: hidden;
         height: 280px;
         position: relative;
+
+        .crown{
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 28px;
+            height: 28px;
+        }
 
         img {
             object-fit: cover;
