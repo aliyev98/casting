@@ -80,6 +80,7 @@ header {
                 }
             }
         }
+
     }
 
     .header-actions {
@@ -146,9 +147,30 @@ header {
                     border: none;
                 }
             }
-            
+
         }
 
     }
 
+}
+
+.page-head-image {
+    header {
+        nav {
+
+            a {
+                color: #fff;
+            }
+        }
+
+        .header-actions {
+            .dropdown-toggle {
+                color: #fff;
+            }
+        }
+    }
+}
+
+.page-head {
+    background: #1B344D;
 }

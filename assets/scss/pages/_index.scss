@@ -5,52 +5,8 @@
     flex-direction: column;
     gap: 100px;
 
-    .homepage-head {
+    .page-head-image {
         background: url('/assets/images/hero-img.jpg');
-        background-size: cover;
-        background-position: top;
-        background-repeat: no-repeat;
-
-        .homepage-hero {
-            padding: 50px 24px 24px 24px;
-            display: flex;
-            gap: 100px;
-
-            .hero-intro {
-                display: flex;
-                flex-direction: column;
-                gap: 16px;
-                width: 50%;
-
-                .hero-title {
-                    color: #FFF;
-                    font-size: 54px;
-                    font-style: normal;
-                    font-weight: 500;
-                    line-height: 120%;
-                    letter-spacing: 1.08px;
-                }
-
-                .hero-description {
-                    color: #FFF;
-                    font-size: 16px;
-                    font-style: normal;
-                    font-weight: 300;
-                    line-height: 140%;
-                    letter-spacing: 0.32px;
-                    font-style: italic;
-                }
-
-                .hero-actions {
-                    display: flex;
-                    align-items: center;
-                    gap: 12px;
-                    margin-top: 16px;
-                }
-
-            }
-
-        }
     }
 
     .homepage-our-partners {

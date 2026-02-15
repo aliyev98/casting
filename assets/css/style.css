@@ -170,6 +170,17 @@ header .header-actions .btn-group .dropdown-toggle:focus {
   border: none;
 }
 
+.page-head-image header nav a {
+  color: #fff;
+}
+.page-head-image header .header-actions .dropdown-toggle {
+  color: #fff;
+}
+
+.page-head {
+  background: #1B344D;
+}
+
 footer {
   padding: 50px 24px;
   display: flex;
@@ -271,6 +282,46 @@ footer .footer-bottom .bottom-actions a {
   font-style: normal;
   font-weight: 400;
   line-height: 120%;
+}
+
+.page-head-image {
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+.page-head-image .homepage-hero {
+  padding: 50px 24px 24px 24px;
+  display: flex;
+  gap: 100px;
+}
+.page-head-image .homepage-hero .hero-intro {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 50%;
+}
+.page-head-image .homepage-hero .hero-intro .hero-title {
+  color: #FFF;
+  font-size: 54px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: 1.08px;
+}
+.page-head-image .homepage-hero .hero-intro .hero-description {
+  color: #FFF;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 140%;
+  letter-spacing: 0.32px;
+  font-style: italic;
+}
+.page-head-image .homepage-hero .hero-intro .hero-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 16px;
 }
 
 .hero-form {
@@ -886,45 +937,8 @@ footer .footer-bottom .bottom-actions a {
   flex-direction: column;
   gap: 100px;
 }
-.homepage-container .homepage-head {
+.homepage-container .page-head-image {
   background: url("/assets/images/hero-img.jpg");
-  background-size: cover;
-  background-position: top;
-  background-repeat: no-repeat;
-}
-.homepage-container .homepage-head .homepage-hero {
-  padding: 50px 24px 24px 24px;
-  display: flex;
-  gap: 100px;
-}
-.homepage-container .homepage-head .homepage-hero .hero-intro {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  width: 50%;
-}
-.homepage-container .homepage-head .homepage-hero .hero-intro .hero-title {
-  color: #FFF;
-  font-size: 54px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 120%;
-  letter-spacing: 1.08px;
-}
-.homepage-container .homepage-head .homepage-hero .hero-intro .hero-description {
-  color: #FFF;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 300;
-  line-height: 140%;
-  letter-spacing: 0.32px;
-  font-style: italic;
-}
-.homepage-container .homepage-head .homepage-hero .hero-intro .hero-actions {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  margin-top: 16px;
 }
 .homepage-container .homepage-our-partners {
   padding: 0 50px;
